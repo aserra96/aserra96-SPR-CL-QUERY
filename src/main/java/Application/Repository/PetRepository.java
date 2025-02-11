@@ -54,7 +54,7 @@ public interface PetRepository extends JpaRepository<Pet, Long> {
      * to initially compile.
      * @param species
      */
-    @Query("FROM Pet WHERE SPECIES = :species")
+    @Query("FROM Pet WHERE species = :species")
     List<Pet> lab1(@Param("species") String species);
 
     /**
